@@ -229,22 +229,6 @@ discardItem (item){
  * @param {Weapon} itemToEquip  The weapon item to equip.
  */
 
-	//  equip(itemToEquip){
-	//   var playerPack = this.getPack().indexOf(itemToEquip);
-	//   if(itemToEquip instanceof Weapon && playerPack !== -1){
-
-	//     if(this.equipped !== false){
-	//       var primaryWeapon = this.equipped;
-	//       this.getPack().splice(playerPack, 1, primaryWeapon);
-	//       this.equipped = itemToEquip;
-	//     } if(this.equipped === false) {
-	//         this.getPack().splice(playerPack, 1);
-	//         this.equipped = itemToEquip;
-	//     } else {
-	//         return false;
-	//     }
-	//   }
-	// }
 
 	equip(itemToEquip){
 		var isWeaponInPack = this._pack.indexOf(itemToEquip);
@@ -282,20 +266,6 @@ discardItem (item){
  * @name eat
  * @param {Food} itemToEat  The food item to eat.
  */
-	 // eat(itemToEat) {
-	 //  var playerPack = this.getPack();
-
-
-	 //  if(playerPack.indexOf(itemToEat) >= 0){
-	 //    if(itemToEat instanceof Food) {
-	 //      this.health += itemToEat.energy;
-	 //      if(this.health > this.getMaxHealth()) {
-	 //        this.health = this.getMaxHealth();
-	 //      }
-	 //        this.discardItem(itemToEat);
-	 //    }
-	 //  }
-	 // }
 
 
  eat(itemToEat){
